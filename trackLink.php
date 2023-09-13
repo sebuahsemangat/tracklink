@@ -43,7 +43,7 @@
             return false; // Tidak ada header redirect
         }
 
-        $shortenedUrl = $_POST['url']; // Gantilah dengan URL yang ingin Anda cek
+        $shortenedUrl = $_POST['url']; // Url dari form yang disubmit
         $redirectTarget = getRedirectTarget($shortenedUrl);
 
         if ($redirectTarget) {
